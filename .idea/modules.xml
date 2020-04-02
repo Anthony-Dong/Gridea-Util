@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/gridea.iml" filepath="$PROJECT_DIR$/.idea/gridea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modify-gridea/modify-gridea.iml" filepath="$PROJECT_DIR$/modify-gridea/modify-gridea.iml" />
+    </modules>
+  </component>
+</project>
