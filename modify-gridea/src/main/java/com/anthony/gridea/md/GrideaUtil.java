@@ -47,7 +47,6 @@ public class GrideaUtil {
         // 多线程并发处理
         ExecutorService pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors() * 2);
 
-
         list.forEach(file -> pool.execute(() -> {
             try {
                 MD md = new MD(file);

@@ -188,13 +188,14 @@ public class MD {
                     this.date = handlerData(line);
                     continue;
                 }
+            } else {
+                // 默认是不需要初始化全部的. 所以直接break
+                if (filter == DEFAULT_FILTER) {
+                    break;
+                }
+                // 你要是还要过滤就自己实现一个.
+                isWrite[i] = filter.test(lines[i]);
             }
-            // 默认是不需要初始化全部的. 所以直接break
-            if (filter == DEFAULT_FILTER) {
-                break;
-            }
-            // 你要是还要过滤就自己实现一个.
-            isWrite[i] = filter.test(lines[i]);
         }
         // 设置初始化完成.
         hasInit = true;
